@@ -64,7 +64,7 @@ const metododepago = metododepagoModel(sequelize, Sequelize)
 
 gerente.hasMany(restaurante)
 restaurante.belongsTo(gerente)
-menu.belongsTo(crearplato)
+menu.hasMany(crearplato)
 crearplato.belongsTo(menu)
 categoria.hasMany(subcategoria)
 subcategoria.belongsTo(categoria)
